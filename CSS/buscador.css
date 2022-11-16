@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body
+{
+    background-color: #000000;
+}
+
+.container
+{
+    display: inline-block;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+.row
+{
+    display: flex;
+    background-color: #000;
+    border-radius: 100px;
+    border: 1px solid #3b3b3b;
+}
+
+
+.row input 
+{
+    background: transparent;
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+    border: none;
+    padding: 0;
+    width: 0;
+    outline: none;
+    transition: all 0.2s;
+}
+
+
+.icon
+{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: auto;
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+    border-radius: 45%;
+    background-color: #ffffff;
+}
+
+
+.icon  img
+{
+    position: absolute;
+    color: #222222;
+}
+
+.icon xmark
+{
+    opacity: 0;
+}
+
+
+.container:hover input,
+input:focus,
+input:not(:placeholder-shown)
+{
+    width: 250px;
+    height: 25px;
+    padding: 1rem;
+    padding-left: 1.5rem;
+}
+
+
+.container:hover .xmark,
+input:focus ~ .icon .xmark,
+input:not(:placeholder-shown) ~
+.icon .xmark
+{
+    opacity: 1;
+}
+
+.container:hover .search,
+input:focus ~ .icon .search,
+input:not(:placeholder-shown) ~
+.icon .search
+{
+    opacity: 0;
+}
+
+
